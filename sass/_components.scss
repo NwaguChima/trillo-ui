@@ -387,9 +387,37 @@
     // Newer browsers - masks
     background-color: var(--color-primary);
     -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    mask-image: url(../img/chevron-thin-right.svg);
     -webkit-mask-size: cover;
+    mask-size: cover;
   }
 }
 
 ///////////////////////////
 /// RECOMMEND
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}
