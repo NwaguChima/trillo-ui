@@ -486,6 +486,7 @@
     background-size: cover;
 
     // Newer browsers - masks
+    // this is first rendered if the browser supports it, else the background-image is used
     @supports (mask-image: url()) or (-webkit-mask-image: url()) {
       background-color: var(--color-primary);
       -webkit-mask-image: url(../img/chevron-thin-right.svg);
